@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px ;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--very-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: var(--dark-cyan);
+    overflow: hidden;
+}
+
+.sedans, .suvs, .luxury {
+    padding: 50px;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+}
+.suv {
+    background-color: var(--dark-cyan);
+}
+.luxury{
+    background-color: var(--very-dark-cyan);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    padding: 30px 0;
+}
+
+.text {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray) ;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border:none;
+    margin: 70px 0 0 0;
+    font-size: 0.9rem;
+}
+button:hover {
+    cursor: pointer;
+    border-color: var(--transparent-white);
+    color: var(--transparent-white);
+    border: 1px solid;
+}
+
+.more_sedans {
+    color: var(--bright-orange);
+}
+.more_sedans:hover {
+    background-color: var(--bright-orange);
+}
+.more_suv {
+    color: var(--dark-cyan);
+}
+.more_suv:hover {
+    background-color: var(--dark-cyan);
+}
+.more_luxury {
+    color: var(--very-dark-cyan);
+}
+.more_luxury:hover {
+    background-color: var(--very-dark-cyan);
+}
+
+@media only screen 
+  and (min-device-width: 375px)
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+      
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 20px;
+      }
+  }
+
